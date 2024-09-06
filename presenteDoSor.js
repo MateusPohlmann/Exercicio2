@@ -112,5 +112,10 @@ remove = animais4.pop()
 add = animais4.push("capivara")
 console.log(animais4)
 // 19. Crie um array chamado `frutas5` contendo as frutas "mamão", "caju", "figo". Use `push` para adicionar "graviola" ao array.
-
+let frutas5 = ["mamão", "caju", "figo"]
+add = frutas5.push("graviola")
+console.log(frutas5)
 // 20. Crie um array chamado `animais5` contendo os animais "lhama", "pinguim", "foca". Use `pop` para remover o último animal do array.
+let animais5 = ["lhama", "pinguim", "foca"]
+remove = animais5.pop()
+console.log(animais5)
