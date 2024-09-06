@@ -75,27 +75,57 @@ let cores = ["vermelho", "azul", "verde"]
 cores.pop()
 cores.unshift("amarelo")
 console.log(cores)
-// 11. Crie uma constante chamada `idade` com o valor 25. Verifique se a idade é maior ou igual a 18 e menor que 30. Armazene o resultado em uma variável chamada `maioridadeJovem`.
+// 11. Crie uma constante chamada idade com o valor 25. Verifique se a idade é maior ou igual a 18 e menor que 30. Armazene o resultado em uma variável chamada maioridadeJovem.
 const idade = 25
+let maiorIdadeJovem = idade >= 30
+console.log(maiorIdadeJovem)
+// 12. Declare uma variável chamada pais e atribua a ela o valor "Brasil". Converta a string para letras maiúsculas e descubra quantos caracteres a string possui. Verifique se o país tem mais de 5 caracteres.
+let pais = 'Brasil'
+let maiusculo = pais.toUpperCase()
+let contar = pais.length
+let maisCaracter = pais > 5
+console.log(maiusculo, contar, maisCaracter)
+// 13. Crie um array chamado numeros contendo os valores 10, 20 e 30. Adicione o número 40 ao final do array e remova o primeiro número da lista.
+let numeros = [10, 20, 30]
+numeros.push(40)
+numeros.splice(0, 1)
+console.log(numeros)
+// 14. Crie uma variável chamada mensagem e atribua a ela a string " Olá, Mundo! ". Remova os espaços em branco no início e no fim, e verifique se a string inclui a palavra "Mundo".
+let mensagem = ' Olá, Mundo! '
+let apagarEspaco = mensagem.trim()
+let procurar1 = mensagem.includes('Mundo')
+console.log(apagarEspaco, procurar1)
+// 15. Declare uma constante chamada nota1 com o valor 8 e outra chamada nota2 com o valor 7. Calcule a média entre as duas notas e verifique se o resultado é maior ou igual a 7.
+const nota1 = 8
+const nota2 = 7
+let media = (nota1 + nota2) /2
+let comparacao = media >= 7
+console.log(media, comparacao)
+// 16. Crie uma variável chamada cidadeNatal com o valor "Recife". Converta a string para letras minúsculas e verifique se a string contém a palavra "ife".
+let cidadeNatal = 'Recife'
+let minusculo = cidadeNatal.toLowerCase()
+let procurar2 = cidadeNatal.includes('ife')
+console.log(minusculo, procurar2)
+// 17. Crie um array chamado saboresDeSorvete contendo "chocolate", "baunilha" e "morango". Use push para adicionar "limão" ao array e depois remova o primeiro sabor.
+let saboresDeSorvete = ['chocolate', 'baunilha', 'morango']
+saboresDeSorvete.push('limão')
+saboresDeSorvete.shift()
+console.log(saboresDeSorvete)
+// 18. Crie uma constante chamada anoNascimento com o valor 2000. Calcule a idade atual subtraindo o ano de nascimento do ano atual (2024). Verifique se a idade é maior que 18.
+const anoNascimento = 2000
+let menos = 2024 - anoNascimento
+let verificar = menos > 18
+console.log(menos, verificar)
+// 19. Declare uma variável chamada curso com o valor " JavaScript ". Remova os espaços em branco, converta a string para letras maiúsculas e armazene o resultado em uma nova variável chamada cursoAjustado.
+let curso = ' JavaScript '
+let remover2 = curso.trim()
+let cursoAjustado = remover2.toUpperCase()
+console.log(cursoAjustado)
 
-// 12. Declare uma variável chamada `pais` e atribua a ela o valor "Brasil". Converta a string para letras maiúsculas e descubra quantos caracteres a string possui. Verifique se o país tem mais de 5 caracteres.
-
-// 13. Crie um array chamado `numeros` contendo os valores 10, 20 e 30. Adicione o número 40 ao final do array e remova o primeiro número da lista.
-
-// 14. Crie uma variável chamada `mensagem` e atribua a ela a string " Olá, Mundo! ". Remova os espaços em branco no início e no fim, e verifique se a string inclui a palavra "Mundo".
-
-// 15. Declare uma constante chamada `nota1` com o valor 8 e outra chamada `nota2` com o valor 7. Calcule a média entre as duas notas e verifique se o resultado é maior ou igual a 7.
-
-// 16. Crie uma variável chamada `cidadeNatal` com o valor "Recife". Converta a string para letras minúsculas e verifique se a string contém a palavra "ife".
-
-// 17. Crie um array chamado `saboresDeSorvete` contendo "chocolate", "baunilha" e "morango". Use `push` para adicionar "limão" ao array e depois remova o primeiro sabor.
-
-// 18. Crie uma constante chamada `anoNascimento` com o valor 2000. Calcule a idade atual subtraindo o ano de nascimento do ano atual (2024). Verifique se a idade é maior que 18.
-
-// 19. Declare uma variável chamada `curso` com o valor " JavaScript ". Remova os espaços em branco, converta a string para letras maiúsculas e armazene o resultado em uma nova variável chamada `cursoAjustado`.
-
-// 20. Crie um array chamado `ingredientes` contendo "farinha", "açúcar" e "ovos". Use `splice` para remover "açúcar" e adicionar "mel" no lugar.
-
+// 20. Crie um array chamado ingredientes contendo "farinha", "açúcar" e "ovos". Use splice para remover "açúcar" e adicionar "mel" no lugar.
+let ingredientes = ['farinha', 'açúcar', 'ovos']
+ingredientes.splice(1, 1, 'mel')
+console.log(ingredientes)
 // 21. Crie uma constante chamada `altura` com o valor 1.75. Verifique se a altura é maior que 1.5 e menor que 2.0. Armazene o resultado em uma variável chamada `alturaIdeal`.
 
 // 22. Declare uma variável chamada `email` e atribua a ela o valor "  exemplo@dominio.com  ". Remova os espaços em branco e verifique se a string inclui o símbolo "@".
