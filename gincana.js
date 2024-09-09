@@ -127,21 +127,49 @@ let ingredientes = ['farinha', 'açúcar', 'ovos']
 ingredientes.splice(1, 1, 'mel')
 console.log(ingredientes)
 // 21. Crie uma constante chamada `altura` com o valor 1.75. Verifique se a altura é maior que 1.5 e menor que 2.0. Armazene o resultado em uma variável chamada `alturaIdeal`.
-
+const altura = 1.75
+let alturaIdeal = 2.0 < altura
+console.log(alturaIdeal, altura < 2.0)
 // 22. Declare uma variável chamada `email` e atribua a ela o valor "  exemplo@dominio.com  ". Remova os espaços em branco e verifique se a string inclui o símbolo "@".
-
+let email = "  exemplo@dominio.com  "
+let remove22 = email.trim()
+let inclui = email.includes("@")
+console.log(remove22, inclui)
 // 23. Crie um array chamado `nomes` contendo "Ana", "Carlos" e "Beatriz". Adicione "Lucas" ao final do array e remova "Ana" do início.
-
+let nomes = ["Ana", "Carlos","Beatriz"]
+nomes.shift()
+nomes.push("Lucas")
+console.log(nomes)
 // 24. Crie uma variável chamada `mensagem2` com o valor "Bem-vindo ao curso de JavaScript!". Verifique se a string inclui a palavra "curso" e depois converta toda a string para letras minúsculas.
-
+let mensagem2 = "Bem-vindo ao curso de JavaScript!"
+let tem = mensagem2.includes("curso")
+let diminui = mensagem2.toLowerCase()
+console.log(tem, diminui)
 // 25. Crie uma constante chamada `preco1` com o valor 50 e outra chamada `preco2` com o valor 80. Verifique se o `preco1` é menor que o `preco2` e armazene o resultado em uma variável chamada `precoComparado`.
-
+const preco1 = 50
+const preco2 = 80
+let precoComparado = 50 < 80
+console.log(precoComparado)
 // 26. Declare uma variável chamada `estado` com o valor " Minas Gerais ". Remova os espaços em branco e verifique se a string inclui a palavra "Gerais".
-
+let estado = " Minas Gerais "
+let semEspaco = estado.trim()
+let inclui26 = semEspaco.includes("Gerais")
+console.log(semEspaco, inclui26)
 // 27. Crie um array chamado `paises` contendo "Brasil", "Argentina" e "Chile". Remova o último país e adicione "Uruguai" ao início do array.
-
+let paises = ["Brasil", "Argentina", "Chile"]
+paises.pop()
+paises.unshift("Uruguai")
+console.log(paises)
 // 28. Crie uma variável chamada `frase` com o valor "Aprender JavaScript é divertido". Verifique se a string inclui a palavra "divertido" e depois converta toda a string para letras maiúsculas.
-
+let frase = "Aprender JavaScript é divertido"
+let tem28 = frase.includes("divertido")
+let convertMaiusculo = frase.toUpperCase()
+console.log(tem28, convertMaiusculo)
 // 29. Crie uma constante chamada `salario` com o valor 2000. Subtraia 500 para representar descontos e verifique se o salário final é maior que 1500.
-
+const salario = 2000
+let desconto29 = salario - 500
+console.log(desconto29 < 1500)
 // 30. Crie um array chamado `frutas3` contendo "pera", "maçã" e "banana". Use `splice` para adicionar "kiwi" entre "maçã" e "banana".
+let frutas3 = ["pera", "maçã", "banana"]
+frutas3.splice(2, 0, "kiwi")
+console.log(frutas3)
